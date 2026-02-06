@@ -4,79 +4,114 @@
   <meta charset="utf-8">
   <title>Semanur Avşar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
       color: #111;
       background: #fff;
     }
-    h1, h2 {
-      font-family: Arial, Helvetica, sans-serif;
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 30px;
+    }
+
+    .photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
       font-weight: 600;
     }
-    h1 { font-size: 2.2em; margin-bottom: 0; }
-    h2 { font-size: 1.4em; margin-top: 1.8em; }
-    .affiliation { color: #444; margin-bottom: 1em; }
-    a { color: #0645ad; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 20px; }
+
+    .contact {
+      margin-top: 8px;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    .contact a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      margin-top: 2em;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
     footer {
       margin-top: 3em;
-      font-size: 0.9em;
+      font-size: 0.85em;
       color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .photo {
+        width: 120px;
+        height: 120px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<h1>Semanur Avşar</h1>
-<div class="affiliation">
-MSc Student, Electrical and Electronics Engineering<br>
-École Polytechnique Fédérale de Lausanne (EPFL)
+<div class="header">
+  <img src="photo.jpg" alt="Semanur Avşar" class="photo">
+
+  <div>
+    <h1>Semanur Avşar</h1>
+
+    <div class="contact">
+      MSc Student, Electrical and Electronics Engineering — EPFL<br>
+      Lausanne, Switzerland<br>
+      <a href="mailto:semanur.avsar@epfl.ch">semanur.avsar@epfl.ch</a> ·
+      <a href="https://linkedin.com/in/semanuravsar">LinkedIn</a> ·
+      <a href="https://github.com/semanuravsar">GitHub</a>
+    </div>
+  </div>
 </div>
 
 <p>
 I am a Master’s student in Electrical and Electronics Engineering at EPFL.
-My interests include machine learning, signal processing, and graph-based methods
-for biomedical and communication systems.
+My academic interests lie at the intersection of machine learning and signal processing,
+with a focus on foundational models and generative approaches.
 </p>
 
 <h2>Research Interests</h2>
 <ul>
-  <li>Machine learning and deep learning</li>
-  <li>Graph signal processing and EEG analysis</li>
-  <li>Wireless communications and information theory</li>
+  <li>Machine learning foundation models</li>
+  <li>Generative AI</li>
+  <li>Signal processing and learning-based representations</li>
 </ul>
-
-<h2>Projects</h2>
-<ul>
-  <li><b>Graph dictionary learning for EEG motor imagery</b>, EPFL.</li>
-  <li><b>Multi-task learning for implicit hate speech detection</b>.</li>
-  <li><b>OFDM communication over audio channel</b>.</li>
-</ul>
-
-<h2>Publications</h2>
-<ul>
-  <li>
-    S. Avşar et al., <i>An Inequality for Query Age of Information and Age of Information</i>,
-    SIU 2022.
-  </li>
-</ul>
-
-<h2>Curriculum Vitae</h2>
-<p>
-<a href="cv.pdf">Download CV (PDF)</a>
-</p>
-
-<h2>Contact</h2>
-<p>
-Email: <a href="mailto:semanur.avsar@epfl.ch">semanur.avsar@epfl.ch</a><br>
-GitHub: <a href="https://github.com/semanuravsar">github.com/semanuravsar</a>
-</p>
 
 <footer>
 Last updated 2026
